@@ -16,5 +16,6 @@ void randomWithDynamicSeed(int end) {
 }
 int main() {
 	randomWithFixedSeed(10);
+	cout <<endl;
 	randomWithDynamicSeed(10);
 }
