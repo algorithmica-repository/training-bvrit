@@ -6,22 +6,22 @@ import java.util.Scanner;
 
 public class TextFileIO {
 
-	public static void readWrite(String infile, String outfile) throws Exception {
-		BufferedReader fin = new BufferedReader(new FileReader(infile));
-		BufferedWriter fout = new BufferedWriter(new FileWriter(outfile));
+	public static void readWrite(String in_name, String out_name) throws Exception {
+		BufferedReader inf = new BufferedReader(new FileReader(in_name));
+		BufferedWriter outf = new BufferedWriter(new FileWriter(out_name));
 		String line;
-		while ((line = fin.readLine()) != null) {
-			fout.write(line);
-			fout.write("\n");
+		while ((line = inf.readLine()) != null) {
+			outf.write(line);
+			outf.write("\n");
 		}
-		fin.close();
-		fout.close();
+		inf.close();
+		outf.close();
 	}
 
 	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
-		String infile = scanner.nextLine();
-		String outfile = scanner.nextLine();
-		readWrite(infile, outfile);
+		String in_name = scanner.nextLine();
+		String out_name = scanner.nextLine();
+		readWrite(in_name, out_name);
 	}
 }

@@ -4,20 +4,19 @@
 #include <cstdlib>
 using namespace std;
 
-void readWrite(string infile, string outfile) {
-	ifstream fin(infile);
-	ofstream fout(outfile);
+void readWrite(string in_name, string out_name) {
+	ifstream fin(in_name);
+	ofstream fout(out_name);
 	string line;
 	while(getline(fin, line)) {
-		cout << line << "\n";
 		fout << line << "\n";
 	}
 	fin.close();
 	fout.close();
 }
 int main() {
-	string infile, outfile;
-	cin >> infile;
-	cin >> outfile;
-	readWrite(infile, outfile);
+	string in_name, out_name;
+	cin >> in_name;
+	cin >> out_name;
+	readWrite(in_name, out_name);
 }
