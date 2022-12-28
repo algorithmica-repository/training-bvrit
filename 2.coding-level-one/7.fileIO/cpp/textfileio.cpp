@@ -1,7 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <ctime>
-#include <cstdlib>
 using namespace std;
 
 void readWrite(string in_name, string out_name) {

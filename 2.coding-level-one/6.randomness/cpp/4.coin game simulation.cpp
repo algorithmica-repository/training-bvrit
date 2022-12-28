@@ -13,16 +13,7 @@ int getNumberOfHeads() {
 	return nheads;
 }
 
-void simulateGame(int targetCount) {
-	int nwins = 0;
-	int nexperiments = 10000;
-	for(int i= 0; i < nexperiments; ++i)
-	if(getNumberOfHeads() >= targetCount)
-	nwins += 1;
-	cout << (float)nwins / nexperiments * 100 << endl;
-}
-
-
-int main() {
-	simulateGame(8);
-}
+/*int main() {
+	for (int i = 0; i < 10; ++i)
+		cout << getNumberOfHeads() << endl;
+}*/

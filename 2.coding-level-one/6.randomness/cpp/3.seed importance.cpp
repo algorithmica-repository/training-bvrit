@@ -14,8 +14,8 @@ void randomWithDynamicSeed(int end) {
 	for(int i= 0; i < 10; ++i)
 		cout << rand() % end << endl;
 }
-int main() {
+/*int main() {
 	randomWithFixedSeed(10);
 	cout <<endl;
 	randomWithDynamicSeed(10);
-}
+}*/
