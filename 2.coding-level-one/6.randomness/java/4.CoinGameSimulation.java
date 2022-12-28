@@ -13,18 +13,9 @@ public class CoinGameSimulation {
 		return nheads;
 	}
 
-	public static void simulateGame(int targetCount) {
-		int nwins = 0;
-		int nexperiments = 10000;
-		for (int i = 0; i < nexperiments; ++i)
-			if (getNumberOfHeads() >= targetCount)
-				nwins += 1;
-		System.out.println((float) nwins / nexperiments * 100);
-	}
-
 	public static void main(String[] args) {
-		simulateGame(8);
-
+		for (int i = 0; i < 10; ++i)
+			System.out.println(getNumberOfHeads());
 	}
 
 }
